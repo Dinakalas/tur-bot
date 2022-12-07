@@ -1,0 +1,16 @@
+#имя бота
+name: JustTour
+#точка входа в файле:
+entryPoint: main.sc
+#движок бота и язык
+botEngine: v2
+language: ru
+#запускаемые тесты:
+tests:
+   include:
+        - test.xml
+#пороговые значения классификаторов
+sts:
+    noMatchThreshold: 0.2
+caila:
+    noMatchThreshold: 0.2

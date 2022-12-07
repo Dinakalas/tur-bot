@@ -1,0 +1,35 @@
+{
+  "positions" : [ {
+    "id" : "/Weather/Begin",
+    "x" : 0,
+    "y" : 14292
+  }, {
+    "id" : "/Weather/AskCity",
+    "x" : 0,
+    "y" : 15577
+  }, {
+    "id" : "/Weather/Step2",
+    "x" : 0,
+    "y" : 15992
+  }, {
+    "id" : "/Weather/Step3",
+    "x" : 0,
+    "y" : 16603
+  }, {
+    "id" : "/Weather/ForecastStep4",
+    "x" : 0,
+    "y" : 17747
+  }, {
+    "id" : "/Weather/HistoryStep4",
+    "x" : 0,
+    "y" : 18805
+  }, {
+    "id" : "/Weather/Step5",
+    "x" : 0,
+    "y" : 19863
+  }, {
+    "id" : "/Weather/Step6",
+    "x" : 0,
+    "y" : 20868
+  } ]
+}

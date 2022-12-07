@@ -1,0 +1,55 @@
+{
+  "positions" : [ {
+    "id" : "/Trip/Begin",
+    "x" : 0,
+    "y" : 5734
+  }, {
+    "id" : "/Trip/CheckName",
+    "x" : 0,
+    "y" : 6541
+  }, {
+    "id" : "/Trip/AskName",
+    "x" : 0,
+    "y" : 7138
+  }, {
+    "id" : "/Trip/Step2",
+    "x" : 0,
+    "y" : 7641
+  }, {
+    "id" : "/Trip/CheckPhone",
+    "x" : 0,
+    "y" : 8210
+  }, {
+    "id" : "/Trip/AskPhone",
+    "x" : 0,
+    "y" : 8807
+  }, {
+    "id" : "/Trip/Step3",
+    "x" : 0,
+    "y" : 9282
+  }, {
+    "id" : "/Trip/Step4",
+    "x" : 0,
+    "y" : 9883
+  }, {
+    "id" : "/Trip/Step5",
+    "x" : 0,
+    "y" : 10618
+  }, {
+    "id" : "/Trip/Step6",
+    "x" : 0,
+    "y" : 11332
+  }, {
+    "id" : "/Trip/Step7",
+    "x" : 0,
+    "y" : 12088
+  }, {
+    "id" : "/Trip/Step8",
+    "x" : 0,
+    "y" : 12812
+  }, {
+    "id" : "/SendMail/Mail",
+    "x" : 0,
+    "y" : 13344
+  } ]
+}

@@ -1,0 +1,248 @@
+{
+  "project" : {
+    "id" : "just_tour_text-1000060800-ZBD",
+    "name" : "just_tour_text-1000060800-ZBD",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "shared" : false
+  },
+  "intents" : [ {
+    "path" : "/Погода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "какая погода"
+    }, {
+      "text" : "какая погодка"
+    }, {
+      "text" : "расскажи о погоде"
+    }, {
+      "text" : "узнать погоду"
+    }, {
+      "text" : "что о погоде"
+    }, {
+      "text" : "прогноз погоды"
+    }, {
+      "text" : "какой прогноз"
+    }, {
+      "text" : "погода в"
+    } ],
+    "classificationRules" : {
+      "refs" : [ {
+        "entityName" : "classRule_1807",
+        "predicate" : "CONTAINS_NOT"
+      }, {
+        "entityName" : "classRule_3971",
+        "predicate" : "CONTAINS_NOT"
+      }, {
+        "entityName" : "classRule_4168",
+        "predicate" : "CONTAINS_NOT"
+      }, {
+        "entityName" : "classRule_8388",
+        "predicate" : "CONTAINS_NOT"
+      } ]
+    },
+    "patterns" : [ "~прогноз", "~погода" ],
+    "slots" : [ {
+      "name" : "Geo",
+      "entity" : "mystem.geo",
+      "required" : false,
+      "prompts" : [ ],
+      "array" : false
+    }, {
+      "name" : "Date",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ ],
+      "array" : false
+    } ],
+    "priority" : 0
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "name" : "classRule_3971",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : true
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "не нужна погода" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "name" : "classRule_4168",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : true
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "не нужен прогноз" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "name" : "classRule_8388",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : true
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "не хочу погоду" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "name" : "classRule_1807",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : true
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "не хочу прогноз" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "mystem.geo", "duckling.number", "duckling.date" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : true
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ]
+}
